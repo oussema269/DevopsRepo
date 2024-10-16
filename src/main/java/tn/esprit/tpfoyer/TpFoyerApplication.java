@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class TpFoyerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TpFoyerApplication.class, args);
+        SpringApplication.run(TpFoyerApplication.class  , args);
     }
 
 }
