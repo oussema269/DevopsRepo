@@ -25,11 +25,14 @@ services:
     image: mysql:8.0
     container_name: tpfoyer_db
     environment:
-      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"  # Pour permettre un mot de passe vide
+      # MYSQL_ROOT_PASSWORD: "your_password"  # Si vous voulez définir un mot de passe pour root
       MYSQL_DATABASE: db
-      MYSQL_USER: root
+      # Retirer les lignes suivantes car elles posent problème
+      # MYSQL_USER: root
+      # MYSQL_PASSWORD:
     ports:
-      - "3307:3306"  # Expose le port MySQL sur l'hôte pour des tests locaux si nécessaire
+      - "3307:3306"  # Correction : utilisez le port 3306 pour le conteneur MySQL
     volumes:
       - mysql_data:/var/lib/mysql
     networks:
