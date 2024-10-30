@@ -29,7 +29,7 @@ services:
       MYSQL_DATABASE: db
       MYSQL_USER: root
     ports:
-      - "3307:3307"  # Expose le port MySQL sur l'hôte pour des tests locaux si nécessaire
+      - "3307:3306"  # Expose le port MySQL sur l'hôte pour des tests locaux si nécessaire
     volumes:
       - mysql_data:/var/lib/mysql
     networks:
