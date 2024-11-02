@@ -14,7 +14,7 @@ import java.util.List;
 @RestController
 @AllArgsConstructor
 @RequestMapping("/bloc")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin("*")
 public class BlocRestController {
 
     IBlocService blocService;
