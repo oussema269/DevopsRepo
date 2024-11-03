@@ -93,10 +93,10 @@
                 </configuration>
             </plugin>
             <!-- Ajoutez le plugin JaCoCo -->
-            <!-- <plugin>
-                 <groupId>org.jacoco</groupId>
-                 <artifactId>jacoco-maven-plugin</artifactId>
-                 <version>0.8.8</version> 
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.8</version> <!-- Vérifiez la dernière version -->
                 <executions>
                     <execution>
                         <goals>
@@ -112,7 +112,6 @@
                     </execution>
                 </executions>
             </plugin>
-        -->
         </plugins>
     </build>
 
