@@ -13,7 +13,7 @@ services:
 
   spring-boot-app:
     image: nourdocker856/foyer
-    container_name: docker-compose-spring-boot
+    container_name: docker-compose-foyer
     ports:
       - "8088:8089"
     depends_on:
